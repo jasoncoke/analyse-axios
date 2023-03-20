@@ -8,6 +8,7 @@ src 中存放 debug 所用到的 html 文件
 
 ## 原文档中陈诉的 Axios 特点
 
+```
 从浏览中创建 XHR 对象 (Make XMLHttpRequests from the browser)
 在 node.js 中创建 http 请求 (Make http requests from node.js)
 提供 Promise Api (Supports the Promise API）
@@ -16,9 +17,9 @@ src 中存放 debug 所用到的 html 文件
 取消请求 (Cancel requests)
 自动转换 json 格式数据 (Automatic transforms for JSON data)
 自动将数据对象序列化为多部分 /form-data 和 x-www-form-urlencoded 体编码 
-
 (Automatic data object serialization to multipart/form-data and x-www-form-urlencoded body encodings）
 保护XSRF的客户端支持 (Client side support for protecting against XSRF）
+```
 
 ## Axios 整体结构与思维
 
@@ -191,3 +192,4 @@ class Axios {
  }
 ......
 ```
+
