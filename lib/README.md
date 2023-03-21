@@ -26,17 +26,17 @@ src 中存放 debug 所用到的 html 文件
 ### 目录结构
 
 ```
-/ dist / # 打包文件
-/ lib / # 源码文件
-|------------ / adapters /	# 定义适配器
+/dist/ # 打包文件
+/lib/ # 源码文件
+|------------ /adapters/	# 定义适配器
 
 |             |----- http.js	# 实现 http 适配器
 
-|			  |----- xhr.js	# 实现 xhr 适配器，即封装 xhr 对象
+|			  |----- xhr.js	    # 实现 xhr 适配器，即封装 xhr 对象
 
-|------------ / cancel /	# 实现请求取消功能
+|------------ /cancel/	# 实现请求取消功能
 
-|------------ / core /	# 定义核心内容
+|------------ /core/	# 定义核心内容
 
 |			   |------ Axios.js	# axios 核心类
 
@@ -55,7 +55,7 @@ src 中存放 debug 所用到的 html 文件
 
 首先创建调用 axios.create() 函数，并在此设置断点
 
-当执行至断电位置时，利用 debug，发现程序随后跳转到 lib/axios.js 中的 createInstance 函数
+当执行至断点位置时，利用 debug，发现程序随后跳转到 lib/axios.js 中的 createInstance 函数
 
 ```javascript
 const $axios = axios.create({
@@ -68,7 +68,7 @@ const $axios = axios.create({
 
 ```javascript
 function createInstance(defaultConfig) {
-  const context = new Axios(defaultConfig); // 创建Axios实例对象 context
+  const context = new Axios(defaultConfig); // 创建 Axios 实例对象 context
   // 创建 instance 函数方法，可直接调用
   // 分析 bind 函数：返回一个函数 并绑定 this 到 context 身上
   const instance = bind(Axios.prototype.request, context); 
