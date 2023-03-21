@@ -31,8 +31,7 @@ src 中存放 debug 所用到的 html 文件
 |------------ /adapters/	# 定义适配器
 
 |             |----- http.js	# 实现 http 适配器
-
-|			  |----- xhr.js	    # 实现 xhr 适配器，即封装 xhr 对象
+|             |----- xhr.js     # 实现 xhr 适配器，即封装 xhr 对象
 
 |------------ /cancel/	# 实现请求取消功能
 
