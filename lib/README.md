@@ -37,13 +37,13 @@ src 中存放 debug 所用到的 html 文件
 
 |------------ /core/	# 定义核心内容
 
-|			   |------ Axios.js	# axios 核心类
+|               |------ Axios.js    # axios 核心类
 
-|			   |------ dispatchRequest.js # 调用 http 请求适配器方法发送请求的函数
+|               |------ dispatchRequest.js  # 调用 http 请求适配器方法发送请求的函数
 
-|			   |------ InterceptorManager.js # 实现拦截器管理
+|               |------ InterceptorManager.js   # 实现拦截器管理
 
-|			   |......
+|               |......
 
 |------------ axios.js/	# 对外暴露接口
 
